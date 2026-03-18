@@ -5,7 +5,7 @@ This folder turns the current manuscript package into a more explicit audit trai
 ## Included artifacts
 
 - `docs/review_audit_trail.md`: source-level search execution notes, preserved counts, and current audit status.
-- `docs/included_studies.md`: readable list of the 31 studies retained in the terminal-focused synthesis.
+- `docs/included_studies.md`: readable list of the 34 retained studies.
 - `docs/full_text_availability_note.md`: explicit note on the 13 inaccessible full-text records and the current reconstruction limits.
 - `../data_extraction.xls`: full extraction spreadsheet for the retained corpus.
 

@@ -1,4 +1,4 @@
-- Reviews 31 studies on truck and resource orchestration in logistics terminals.
+- Reviews 34 studies on truck and resource orchestration in logistics terminals.
 - Maps methods, uncertainty treatment, dynamics, and validation strategies.
 - Introduces a validity frontier linking simplifications to deployment risk.
 - Shows a strong dominance of solver experiments over real-data validation.

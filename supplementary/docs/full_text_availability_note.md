@@ -4,7 +4,7 @@
 
 - 13 records were excluded because their full texts could not be retrieved.
 - This corresponds to 31.0% of the post-deduplication set (`13 / 42`).
-- Relative to the terminal-focused final retained corpus, this loss is 41.9% of the final sample size (`13 / 31`).
+- Relative to the final retained corpus, this loss is 38.2% of the final sample size (`13 / 34`).
 
 ## Why this matters
 
@@ -33,4 +33,4 @@ On March 18, 2026, the local Zotero workspace was inspected to see whether a def
 
 ## Practical consequence
 
-The manuscript can now report the magnitude of the accessibility loss transparently, but it still cannot claim a definitive appendix listing the 13 inaccessible full-text studies. In the current journal-facing version, this accessibility loss is reported against a terminal-focused final corpus of 31 studies after removing three peripheral non-terminal analogues from the broader quality-passing set. Recovering the original Parsifal screening log remains necessary before journal submission.
+The manuscript can now report the magnitude of the accessibility loss transparently, but it still cannot claim a definitive appendix listing the 13 inaccessible full-text studies. Recovering the original Parsifal screening log remains necessary before journal submission.
