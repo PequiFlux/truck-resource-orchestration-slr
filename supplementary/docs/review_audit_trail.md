@@ -32,11 +32,22 @@ Result preserved from the review log:
 
 - 22 documents found in Scopus
 
+## Exact IEEE Xplore Query Preserved
+
+```text
+( "truck scheduling" OR "truck appointment system" OR "yard management" OR "terminal logistics" OR "agribusiness logistics" ) AND ( queue* OR "resource allocation" OR bottleneck OR dock* ) AND ( optimiz* OR heuristic* OR "reinforcement learning" OR "machine learning" OR simulation ) AND ( "real-time" OR dynamic OR uncertain* )
+```
+
+Result preserved from the review log:
+
+- IEEE Xplore showed 13 results for this query
+- the preserved Parsifal import snapshot still lists 12 IEEE records
+
 ## Source-Level Execution Details Preserved
 
 | Source | Execution date | Recoverable retrieval scope | Filters applied | Preserved count |
 | --- | --- | --- | --- | --- |
-| IEEE Xplore | February 27, 2026 | Common Boolean query aligned with title/abstract/keyword retrieval; exact interface field tags not preserved | No temporal filter | 12 imported records |
+| IEEE Xplore | February 27, 2026 | Exact advanced-search syntax preserved for this source; direct Boolean query with no year filter | No temporal filter | 13 results shown retrospectively; 12 imported records preserved in the archived snapshot |
 | Web of Science | February 27, 2026 | Common Boolean query aligned with title/abstract/keyword retrieval; exact interface field tags not preserved | Publication year 2021-2026 | 20 imported records |
 | Scopus | February 27, 2026 | Exact advanced-search syntax preserved for this source; `TITLE-ABS-KEY` query plus explicit year filter | Publication year 2021-2026 | 22 documents found and imported |
 | Backward snowballing via Zotero | Same review cycle after database screening | Reference-list inspection rather than database-field syntax | Same inclusion and exclusion rules as the database search | 8 additional records |
@@ -54,9 +65,9 @@ Result preserved from the review log:
 
 ## Preservation Status
 
-- Preserved: core Boolean query, exact Scopus query, source list, search date, source-level imported counts, retained-corpus list, and extraction spreadsheet.
+- Preserved: core Boolean query, exact IEEE Xplore query, exact Scopus query, source list, search date, source-level imported counts, retained-corpus list, and extraction spreadsheet.
 - Preserved only in aggregate: deduplication result and count of inaccessible full-text exclusions.
-- Partially preserved: database-specific field tags as typed in each interface, because the exact Scopus syntax is archived but IEEE Xplore and Web of Science strings are not.
+- Partially preserved: database-specific field tags as typed in each interface, because the exact IEEE Xplore and Scopus syntax is archived but the Web of Science string is not.
 - Not preserved: duplicate-pair log, definitive article-level list of the 13 inaccessible full-text records, and item-level quality scores.
 
 ## Full Extraction Sheet
