@@ -126,7 +126,7 @@ Table~\ref{tab:search-audit} records the source-level execution details that rem
 \rowcolor{tablehead}
 \textbf{Source} & \textbf{Execution date} & \textbf{Recoverable retrieval scope} & \textbf{Filters applied} & \textbf{Preserved count} \\
 IEEE Xplore & February 27, 2026 & Exact advanced-search syntax preserved for this source; direct Boolean query with no year filter. & No temporal filter. & 13 results shown retrospectively; 12 imported records preserved in the archived snapshot. \\
-Web of Science & February 27, 2026 & Common Boolean query aligned with title/abstract/keyword retrieval; exact interface field tags not preserved. & Publication-year filter 2021--2026. & 20 imported records. \\
+	Web of Science & February 27, 2026 & Exact advanced-search syntax preserved for this source; \texttt{TS=} retrieval with publication restriction. & Publication-year filter 2021--2026. & 21 results shown retrospectively; 20 imported records preserved in the archived snapshot. \\
 Scopus & February 27, 2026 & Exact advanced-search syntax preserved for this source; \texttt{TITLE-ABS-KEY} retrieval with year filter. & Publication-year filter 2021--2026. & 22 documents found and imported. \\
 Backward snowballing via Zotero & Same review cycle after database screening & Reference lists of screened papers; no database-specific field syntax applies. & Same inclusion and exclusion rules as the database search. & 8 additional records. \\
 \end{tabularx}
@@ -145,7 +145,19 @@ AND ( optimiz* OR heuristic* OR "reinforcement learning" OR "machine learning" O
 AND ( "real-time" OR dynamic OR uncertain* )
 \end{quote}
 
-IEEE Xplore showed 13 results for this query, while the preserved Parsifal import snapshot lists 12 IEEE records. The retrospective interface hit count is therefore informative for reproducibility, but the archived screening flow and PRISMA totals remain anchored to the preserved import and screening records. For Scopus, the exact archived advanced-search syntax was:
+IEEE Xplore showed 13 results for this query, while the preserved Parsifal import snapshot lists 12 IEEE records. The retrospective interface hit count is therefore informative for reproducibility, but the archived screening flow and PRISMA totals remain anchored to the preserved import and screening records. For Web of Science, the exact archived advanced-search syntax was:
+
+\begin{quote}
+\footnotesize
+\ttfamily
+TS=(( "truck scheduling" OR "truck appointment system" OR "yard management"\\
+OR "terminal logistics" OR "agribusiness logistics" )\\
+AND ( queue* OR "resource allocation" OR bottleneck OR dock* )\\
+AND ( optimiz* OR heuristic* OR "reinforcement learning" OR "machine learning" OR simulation )\\
+AND ( "real-time" OR dynamic OR uncertain* ))
+\end{quote}
+
+With the publication restriction 2021--2026 applied, Web of Science returned 21 results, while the preserved Parsifal import snapshot lists 20 Web of Science records. As with IEEE Xplore, the retrospective interface hit count improves reproducibility, but the archived screening flow and PRISMA totals remain anchored to the preserved import and screening records. For Scopus, the exact archived advanced-search syntax was:
 
 \begin{quote}
 \footnotesize
@@ -158,7 +170,7 @@ AND ( "real-time" OR dynamic OR uncertain* ))\\
 AND PUBYEAR > 2020 AND PUBYEAR < 2027
 \end{quote}
 
-This exact Scopus query returned 22 documents. Equivalent interface-specific syntax for Web of Science was not preserved in the archived materials. Deduplication is auditable only at aggregate level in the current archive: 18 duplicates were removed, leaving 42 records for screening. No additional records were excluded on topical grounds at title/abstract screening; the screening loss came from 13 records whose full texts remained inaccessible despite exhaustive retrieval attempts through institutional subscriptions, CAPES, institutional repositories, and public author pages. This availability-based attrition corresponds to 31.0\% of the post-deduplication set (13/42). Backward snowballing then added eight studies, yielding 37 studies entering quality assessment and a final retained corpus of 34 studies. The pairwise duplicate log and the article-level metadata of the 13 inaccessible full-text records were not preserved in the current workspace.
+This exact Scopus query returned 22 documents. Deduplication is auditable only at aggregate level in the current archive: 18 duplicates were removed, leaving 42 records for screening. No additional records were excluded on topical grounds at title/abstract screening; the screening loss came from 13 records whose full texts remained inaccessible despite exhaustive retrieval attempts through institutional subscriptions, CAPES, institutional repositories, and public author pages. This availability-based attrition corresponds to 31.0\% of the post-deduplication set (13/42). Backward snowballing then added eight studies, yielding 37 studies entering quality assessment and a final retained corpus of 34 studies. The pairwise duplicate log and the article-level metadata of the 13 inaccessible full-text records were not preserved in the current workspace.
 
 Backward snowballing inspected the reference lists of the screened papers through Zotero and applied the same inclusion and exclusion rules used in the main search. This step was used to recover antecedent or adjacent studies that fit the review scope but were not returned directly by the database query.
 
@@ -293,7 +305,7 @@ Methodologically, the review has limitations. Most importantly, 13 of the 42 pos
 \textbf{Artifact} & \textbf{Status} & \textbf{Current evidence in the package} \\
 Core Boolean query & Preserved & Reported in Section 2.1 and companion audit notes. \\
 Source list, execution date, and imported counts & Preserved & Table~\ref{tab:search-audit} records the three databases, the search date, the source-level counts, and the snowballing additions. \\
-Database-specific field tags typed in each interface & Partially preserved & The exact IEEE Xplore and Scopus search strings are now archived, but the equivalent Web of Science interface string was not preserved. \\
+Database-specific field tags typed in each interface & Preserved & The exact IEEE Xplore, Web of Science, and Scopus search strings are now archived, although only the aggregate deduplication and screening logs were preserved. \\
 Duplicate-pair log & Not preserved & The package preserves the aggregate result of deduplication (18 removals), but not the pairwise duplicate register. \\
 Final retained-corpus list & Preserved & Appendix~\ref{app:included} enumerates the 34 included studies. \\
 Full extraction spreadsheet & Preserved & The manuscript package includes \texttt{data\_extraction.xls}. \\
