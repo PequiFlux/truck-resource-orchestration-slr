@@ -72,7 +72,9 @@ Result preserved from the review log:
 - records added by snowballing: 8
 - studies entering quality assessment: 37
 - studies excluded with score `<= 7.5`: 3
-- final retained corpus: 34
+- studies passing the quality threshold: 34
+- peripheral non-terminal analogues removed during terminal-focused synthesis refinement: 3
+- final retained corpus used in the manuscript: 31
 
 ## Preservation Status
 
@@ -87,4 +89,4 @@ Result preserved from the review log:
 
 ## Journal-Grade Gap That Still Remains
 
-The current package is now explicit about what is auditable and what is not. It still does not support a retrospective threshold-sensitivity analysis or a definitive appendix for the 13 inaccessible full-text records. Those two artifacts depend on recovering the original Parsifal screening workspace.
+The current package is now explicit about what is auditable and what is not. It also records that the journal-facing manuscript applies a stricter terminal-focused boundary than the broader working corpus that originally passed quality screening, removing three peripheral non-terminal analogues from the main synthesis. The package still does not support a retrospective threshold-sensitivity analysis or a definitive appendix for the 13 inaccessible full-text records. Those two artifacts depend on recovering the original Parsifal screening workspace.

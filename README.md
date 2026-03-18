@@ -35,7 +35,7 @@ latexmk -pdf main.tex
 
 - [x] `main.tex` é a única fonte LaTeX do pacote.
 - [x] `artigos_icpr.bib` está ligado ao build do manuscrito.
-- [x] `abstract` está abaixo do limite do CIE: 87 / 250 palavras.
+- [x] `abstract` está abaixo do limite do CIE: 207 / 250 palavras.
 - [x] `keywords` estão dentro da faixa pedida pelo CIE: 5 / 7.
 - [x] `highlights.txt` atende a regra de 3 a 5 bullets com até 85 caracteres por bullet.
 - [x] O corpo do artigo está organizado em seções numeradas.
