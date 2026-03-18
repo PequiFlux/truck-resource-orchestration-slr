@@ -9,7 +9,7 @@
 
 ## Search Date
 
-- February 27, 2026 for the database searches
+- All database searches in IEEE Xplore, Web of Science, and Scopus were conducted on February 27, 2026
 - same review cycle for backward snowballing
 
 ## Core Boolean Query Preserved
